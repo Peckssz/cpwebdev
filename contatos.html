@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="shortcut icon" href="https://cherry-client-b8f.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Ff5c078cc-8f60-4a9f-aff1-cd9ebf813e9f%2Fcec944cd-f296-42a6-b28f-63ce7dae03e5%2Fimage.jpeg?table=block&id=106911d8-4e0d-80f0-8d8d-e53c55184a61&spaceId=f5c078cc-8f60-4a9f-aff1-cd9ebf813e9f&width=1420&userId=&cache=v2" type="image/x-icon">
+</head>
+<body>
+    
+    <h2>Fale com a gente!</h2>
+    <form>
+        <label for="nome"> Nome completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+        <br><br>
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email"  >
+        <br><br>
+        <label for="telefone">Celular:</label>
+        <input type="tel" maxlength="11" placeholder="Ex: 1190028922">
+        
+        
+        <br><br>
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto">
+            <option value="reclamacao">Reclamação</option>
+            <option value="elogio">Elogio</option>
+            <option value="recomendacao">Recomendação</option>
+        </select>
+        <br><br>
+        <label for="mensagem">Mensagem: </label>
+        <textarea rows="4" id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui"></textarea>
+        <br><br>
+        <label for="novidade">Deseja receber as novidades no seu email?</label>
+        
+        <input type="radio" name="novidades">Sim
+        <input  type="radio" name="novidades">Não
+        <br><br>
+        <button type="reset">Limpar</button> <button type="submit">Enviar</button>
+        
+       
+    
+    
+    </form>
+</body>
+</html>
