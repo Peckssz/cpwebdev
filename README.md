@@ -5,6 +5,7 @@ Pietro Brandalise De Andrade - RM 560142
 Caio Costa Beraldo - RM 560775 
 Leandro Kamada Pesce Dimov - RM 560381 
 Victor Kenzo Mikado - RM 560057
+Lucas Alves Piereti - RM 559533
 
 Contido no projeto: 
 * HTML (Elementos de texto, imagens, links, listas e 
