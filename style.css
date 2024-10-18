@@ -276,3 +276,77 @@ footer {
 #dicas-cards.active {
     max-height: 1000px;
 }
+
+/* Style da página contatos */
+
+.containerContato {
+    background-color: #603a75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    line-height: 2.5;
+    border-bottom: #603a75;
+
+}
+
+.containerContato h1 {
+    font-family: "Irish Grover", serif;
+    margin-right: 200px;
+    color: white;
+    font-weight: 400;
+    font-size: 90px;
+}
+
+.containerContato img {
+    border-radius: 89px;
+}
+
+.containerForms {
+    width: 100%;
+    background-color: #603a75;
+    margin: 50px auto;
+    padding: 20px;
+
+}
+
+.containerForms h2 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2;
+}
+
+.containerForms label {
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+.containerForms h2,
+.containerForms label {
+    font-family: "Irish Grover", serif;
+    color: white;
+
+
+}
+
+.containerForms button {
+    background: #730071;
+    width: 204px;
+    height: 40px;
+    border-radius: 13px 0px 0px 0px;
+    color: white;
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-size: 24px;
+    width: 204px;
+
+}
+
+.inputPequeno {
+    width: 247px;
+    height: 31px;
+
+
+}
