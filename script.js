@@ -55,3 +55,12 @@ adjustFooter();
 function mostrarAnimalInfo(nome, idade, porte, sexo, vermifugacao, vacinacao, castracao) {
     alert(`Nome: ${nome}\nIdade: ${idade} meses\nPorte: ${porte}\nSexo: ${sexo}\nVermifugado: ${vermifugacao}\nVacinado: ${vacinacao}\nCastrado: ${castracao}`);
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const donationLink = document.querySelector('a[href*="instagram"]');
+
+    donationLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        alert('Você será redirecionado para o Instagram do Projeto Pacotinho de Amor.');
+        window.open(this.href, '_blank');
+    });
+});
