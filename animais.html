@@ -1,91 +1,84 @@
 
-<html lang="pt-BR"></html>                                                                           
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Pacotinho de Amor</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(90deg, ); 
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background-color: #D9B4D5;
-            border-radius: 15px;
-            width: 100%;
-            padding: 50px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-      
-        }
-        .welcome {
-            background-color: #FFF680;
-            padding: 10px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            font-weight: bold;
-            color: #4B0082;
-        }
-        .content {
-            color: #4B0082;
-            line-height: 1.6;
-            text-align: left;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #FFDC00;
-        }
-        .cta {
-            background-color: #FFDC00;
-            color:  #000000;
-            padding: 15px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
-        .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .logo img {
-            max-width: 100px;
-            border-radius: 50%;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
-    </style>
+    <title>Adoção de Animais</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Animais para  adoção</h1>
-            <br><br><br><br><br><br><br><br><br><br><br>
-           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <img src="images/Acai.png" width="400"><img src="images/Granola.png" width="400">
-            <img src="images/Banana.png" width="400"><img src="images/Jade.png" width="400">
-            <img src="images/Sparks.png" width="400"><img src="images/Juliette.png" width="400">
-            
-
-
+<body class="bodyA">
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <img src="https://s3-alpha-sig.figma.com/img/44a0/e220/fe03d323d7f28c1901b07440ae9669f2?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=d0cN7kcjrGfm7GT~C2P1TYAmPsMVSeO~X~9OTZ4lXhlPz~H7IVZXbb0~bXZUbR4vB8HPjCXljjf~sDIqaTlTbGojOBl57Ndm7AdtTnpfqphOozdzX2LpvymJ1eQvcigBAZ-6t5XK6hfvUuYrrpQHojCeKr8YIUROuiRH4gFBGOQFCTh5~YT6h9CILXPWvdaMKcK5OR8kIygI-Monh~Pk6pbZ8i7~30gv~C0XorWE5RsAKrxtGM1oTxuf8eOjYhMTVKDn7Vn0~5TxdJ6HB49XZIe-jJoP36W~PCZ2~L78nbLl-QCMeLjQJYt39EdbT2lLWebdzgbddUx-HfGkv5rA1Q__" alt="logo">
+                    <span>Pacotinho de Amor</span>
+                </div>
+                <ul class="navbar-lista">
+                    <li>
+                        <a href="homepage.html">
+                            Quem somos
+                        </a>
+                    <li>
+                        <a href="SobreProjeto.html">
+                            Sobre
+                        </a>
+                    <li>
+                        <a href="animais.html">
+                            Adoção
+                        </a>
+                    <li>
+                        <a href="adoteieagora.html">
+                            Adotei, e agora?
+                        </a>
+                    <li>
+                        <a href="contatos.html">
+                            Contato
+                        </a>
+                </ul>
+            </div>
         </div>
-    </div>  <a href="https://www.instagram.com/projeto.pacotinhodeamor?igsh=Y2Zicjc5bG16NDIw">Para ver mais animais clique aqui</a><br>
-
+    </header>
+<h1 class="H1">Adoção de Animais</h1>
+<div class="containerAnimal">
+    <div class="animal" onclick="mostrarAnimalInfo('Açaí', 4, 'Médio', 'Macho', 'Vermifugado', 'Vacinado', 'Castrado') ">
+        <img src="images/Acai.png" alt="Acaí">
+        <h3>Açaí</h3>
+        <p>Idade: 4 meses</p>
+        <p>Porte: Médio</p>
+    </div>
+    <div class="animal" onclick="mostrarAnimalInfo('Banana', 4, 'Médio', 'Fêmea', 'Vermifugada', 'Vacinada', 'Castrada')">
+        <img src="images/Banana.png" alt="Banana">
+        <h3>Banana</h3>
+        <p>Idade: 4 meses</p>
+        <p>Porte: Médio</p>
+    </div>
+    <div class="animal" onclick="mostrarAnimalInfo('Granola', 4, 'Médio', 'Fêmea', 'Vermifugada', 'Vacinada', 'Castrada')">
+        <img src="images/Granola.png" alt="Granola">
+        <h3>Granola</h3>
+        <p>Idade: 4 meses</p>
+        <p>Porte: Médio</p>
+    </div>
+    <div class="animal" onclick="mostrarAnimalInfo('Juliette', 5, 'Médio', 'Fêmea', 'Vermifugado', 'Vacinado', 'Castrada')">
+        <img src="images/Juliette.png" alt="Juliette">
+        <h3>Juliette</h3>
+        <p>Idade: 5 meses</p>
+        <p>Porte: Médio</p>
+    </div>
+    <div class="animal" onclick="mostrarAnimalInfo('Jade', 3, 'Médio', 'Fêmea', 'Vermifugada', 'Vacinada', 'Castrada')">
+        <img src="images/Jade.png" alt="Jade">
+        <h3>Jade</h3>
+        <p>Idade: 3 meses</p>
+        <p>Porte: Médio</p>
+    </div>
+</div>
+<footer>
+    <P>© Copyright Pacotinho de amor</P>
+</footer>
+<script src="script.js"></script>>
     
 
 </body>
 </html>
+
