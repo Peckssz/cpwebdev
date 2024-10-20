@@ -566,8 +566,8 @@ footer {
 /* Style da página contatos */
 
 .containerContato {
-    background-color: var(--color-purple);
     background: linear-gradient(180deg, var(--color-purple) 0%, var(--color-lightpurple) 100%);
+    background-color: var(--color-purple);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -719,7 +719,6 @@ footer {
 
 
 
-
 .bodyA {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -753,3 +752,4 @@ footer {
 .animal img {
     max-width: 100%;
     border-radius: 10px;
+}
