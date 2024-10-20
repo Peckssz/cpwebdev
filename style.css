@@ -567,6 +567,7 @@ footer {
 
 .containerContato {
     background-color: var(--color-purple);
+    background: linear-gradient(180deg, var(--color-purple) 0%, var(--color-lightpurple) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
