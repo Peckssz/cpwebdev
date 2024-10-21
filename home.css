@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(/images/faustino.png); 
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width:80px;
+    cursor:pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+.navbar ul li a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.navbar ul li::after{
+    content:"";
+    height: 3px;
+    width: 0;
+    background: #FCF684;
+    position:absolute;
+    left: 0px;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.content{
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+    font-family: Irish Grover, sans-serif;
+}
+.content p{
+    font-size: 30px;
+    margin:20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #FCF684;
+}
+button{
+    width:200px;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: solid #FCF684;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position:relative;
+    overflow: hidden;
+}
+span{
+    background:#FCF684;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width:100%;
+}
+button:hover{
+    border:none;
+}
+
+/*texto com imagem ao lado*/
+
+main {
+    width: 85%;
+    margin: auto;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+.image-container {
+    margin-right: 40px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-left: 90px;
+    
+   
+}
+
+.image {
+    width: 500px;
+    height: 400px;
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+}
+
+.text {
+    flex: 2; 
+}
+.text button{
+    border: solid #B77CD7;
+    color: black;
+}
+.text button:hover span{
+    width:100%;
+}
+.text button span{
+    background:#B77CD7;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.text button:hover{
+    border: #FCF684;
+
+}
+
+.text h1{
+    font-family: Irish Grover, sans-serif;
+    font-size: 60px;
+
+}
+.text p{
+    font-size: 20px;
+    text-align: left;
+
+}
+/*testimonials*/
+.testimonial-card {
+    background-image: url(/images/background.png);
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px auto; 
+    max-width: 800px; 
+
+}
+
+.testimonial-card h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+    color: #FCF684; 
+    font-size: 50px;
+    font-family: Irish Grover, sans-serif;
+
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+
+.testimonial {
+    padding: 15px; 
+    border: 1px solid #B77CD7; 
+    border-radius: 10px; 
+    background-color: #fff; 
+}
+
+/*como ajudar*/
+
+
+.cards-title {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: Irish Grover, sans-serif;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 20px; 
+    color: #FCF684; 
+    font-size: 30px; 
+}
+
+.card-container {
+    padding-left: 200px;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.card {
+    width: 230px; 
+    margin: 10px; 
+    padding: 15px; 
+    background-color: #B77CD7; 
+    border-radius: 10px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+
+.card-image {
+    width: 100px;
+    height: 100px; 
+    border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0; 
+    text-align: center;
+}
+.card span{
+    background:#FCF684;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.card button:hover span{
+    width:100%;
+}
+.card button:hover{
+    border:none;
+}
+
+/*footer*/
+
+
+footer {
+    background-color: #B77CD7;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin: 0px 10px;
+}
+
+.icon img {
+    width: 40px; 
+    height: 40px;
+
+}
+
+
+.newsletter {
+    margin-bottom: 20px;
+}
+
+.newsletter h3 {
+    margin-bottom: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 250px; 
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FCF684; 
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #FFD700; 
+}
+
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.footer-content p{
+    font-family: Irish Grover ;
+    font-size: 22px;
+}
+.social-icons a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}

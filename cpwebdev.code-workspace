@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../BASICS-HTML-/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "cpwebdev"
+	}
+}
