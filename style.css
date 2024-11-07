@@ -209,6 +209,7 @@ footer p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 5vh;
 }
 
 .cards {
@@ -363,7 +364,7 @@ header {
 ul.navbar-lista {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 0.675rem;
 }
 
 ul.navbar-lista a {
@@ -378,14 +379,14 @@ ul.navbar-lista a {
 footer {
     background-color: var(--color-purple);
     color: white;
-    padding: 15px;
+    padding: 2vh 5vw;
     text-align: center;
     width: 100%;
     font-family: "Irish Grover", system-ui;
     position: fixed;
     bottom: 0;
     left: 0;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 /* imagem de fundo e texto "adotei, e agora?" */
@@ -551,7 +552,7 @@ footer {
     background-color: var(--color-lightpurple);
 }
 
-/* transição de slide para cima e para baixo quando clica no botão */ 
+/* transição de slide para cima e para baixo quando clica no botão */
 
 #dicas-cards {
     max-height: 0;
@@ -566,7 +567,6 @@ footer {
 /* Style da página contatos */
 
 .containerContato {
-    background: linear-gradient(180deg, var(--color-purple) 0%, var(--color-lightpurple) 100%);
     background-color: var(--color-purple);
     display: flex;
     justify-content: center;
@@ -665,7 +665,6 @@ footer {
     line-height: 15px;
 }
 
-
 .containerForms button:hover {
     background: #5e005c;
     cursor: pointer;
@@ -712,181 +711,3 @@ footer {
     width: 35px;
     border-radius: 5px;
 }
-
-
-
-
-/* Style Adote */
-
-
-.bodyA {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-.H1 {
-    text-align: center;
-    margin-top: 20px;
-}
-.containerAnimal {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-.animal {
-    background-color: #f34fa948;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    width: 200px;
-    cursor: pointer;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-}
-.animal:hover {
-    background-color: #e7e7e7;
-}
-.animal img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-
-
-
-
-/* Sobre Nós */
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar-logo {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-logo img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.navbar-logo span {
-    font-size: 1.5em;
-    color: white;
-}
-
-.navbar-lista {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-lista li {
-    display: inline-block;
-}
-
-.navbar-lista a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-.navbar-lista a:hover {
-    color: #ffd1cc;
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-ul {
-    list-style-type: square;
-    margin: 10px 0;
-    padding-left: 20px;
-}
-
-
-.highlight {
-    color: #603A75; 
-}
-
-
-
-.cards {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0;
-}
-
-.card {
-    background-color: #BA90B8;
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    width: 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
-}
-
-.highlight {
-    color: #603A75; 
-}
-
-.cards {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0;
-    gap: 40px; 
-}
-
-.card {
-    background-color: #BA90B8; 
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    width: calc(33.33% - 40px); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 40px; 
-}
-
-.card img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
-}
-
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
