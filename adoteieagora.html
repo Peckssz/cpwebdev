@@ -16,30 +16,35 @@
         <div class="container">
             <div class="navbar">
                 <div class="navbar-logo">
-                    <img src="./images/logo.png" alt="logo">
+                    <img src="./HTML CSS JS/logo.png" alt="logo">
                     <span>Pacotinho do Amor</span>
                 </div>
                 <ul class="navbar-lista">
                     <li>
-                        <a href="index.html">
-                            Quem somos
+                        <a href="homepage.html">
+                            Quem somos?
                         </a>
+                    </li>
                     <li>
                         <a href="SobreProjeto.html">
                             Sobre
                         </a>
+                    </li>
                     <li>
                         <a href="animais.html">
                             Adoção
                         </a>
+                    </li>
                     <li>
                         <a href="adoteieagora.html">
                             Adotei, e agora?
                         </a>
+                    </li>
                     <li>
                         <a href="contatos.html">
                             Contato
                         </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -52,12 +57,12 @@
                     <h1>Adotei,<br> e agora?</h1>
                 </div>
                 <div class="container-gatinho">
-                    <img src="./images/gatinho-branco.jpg" alt="gatinho-branco">
+                    <img src="./HTML CSS JS/gatinho-branco.jpg" alt="gatinho-branco">
                 </div>
             </div>
             <div class="container">
                 <div class="imagem-de-fundo">
-                    <img src="./images/patinhas.jpg" alt="patinhas-bg">
+                    <img src="./HTML CSS JS/patinhas.jpg" alt="patinhas-bg">
                 </div>
             </div>
         </div>
@@ -65,50 +70,51 @@
 
     <div class="container">
         <div class="novos-adotantes">
-            <h1 id="botao-dicas">
-                Dicas para novos adotantes
-            </h1>
-        </div>
-        <div class="cards-cuidados" id="dicas-cards">
-            <div class="cards">
-                <div id="cuidados-basicos">
+            <div class="dropdown">
+                <button onclick="toggleDropdown()" class="botao-drop-adotei">Dicas para novos adotantes</button>
+                <div id="dicas-dropdown" class="conteudo-drop-adotei">
+                    <a href="#" data-section="cuidados-basicos">Cuidados Básicos</a>
+                    <a href="#" data-section="alimentacao">Alimentação</a>
+                    <a href="#" data-section="adaptacao">Adaptação</a>
+                    <a href="#" data-section="vacinas">Vacinas</a>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div id="cuidados-basicos-card" class="card-informacao">
+                    <img src="./HTML CSS JS/pets.png" alt="cuidados-basicos">
                     <h2>Cuidados Básicos</h2>
-                    <p>Os cuidados básicos garantem que seu novo pet se sinta confortável e saudável no novo lar. Monte
-                        um espaço aconchegante com uma caminha, tigelas de água e comida sempre limpas, e brinquedos
-                        para
-                        manter seu animalzinho entretido. A higiene também é fundamental: escove-o regularmente, corte
-                        as unhas
-                        e, no caso de cães e gatos, garanta banhos periódicos.</p>
+                    <p>Os cuidados básicos garantem que seu novo pet se sinta confortável e saudável no novo lar. 
+                    Monte um espaço aconchegante com uma caminha, tigelas de água e comida sempre limpas,
+                    e brinquedos para manter seu animalzinho entretido.
+                    A higiene também é fundamental: escove-o regularmente, corte as unhas e, no caso de cães e gatos, garanta banhos periódicos.</p>
                 </div>
-            </div>
-            <div class="cards">
-                <div id="alimentacao">
+                
+                <div id="alimentacao-card" class="card-informacao">
+                    <img src="./HTML CSS JS/racao.png" alt="alimentacao" >
                     <h2>Alimentação</h2>
-                    <p>A alimentação do seu pet deve ser balanceada e adequada ao porte e idade do animal. Consulte um
-                        veterinário para escolher a melhor ração, e mantenha sempre água fresca à disposição. Evite
-                        oferecer alimentos humanos, como chocolate, cebola e uvas, que são tóxicos para eles. Alimente
-                        seu pet
-                        em horários regulares e na quantidade recomendada, evitando o sobrepeso.</p>
+                    <p>A alimentação do seu pet deve ser balanceada e adequada ao porte e idade do animal.
+                    Consulte um veterinário para escolher a melhor ração, e mantenha sempre água fresca à disposição.
+                    Evite oferecer alimentos humanos, como chocolate, cebola e uvas, que são tóxicos para eles. 
+                    Alimente seu pet em horários regulares e na quantidade recomendada, evitando o sobrepeso.</p>
                 </div>
-            </div>
-            <div class="cards">
-                <div id="adaptacao">
+                
+                <div id="adaptacao-card" class="card-informacao">
+                    <img src="./HTML CSS JS/ossinho.png" alt="adaptacao">
                     <h2>Adaptação</h2>
-                    <p>A adaptação do seu novo pet pode levar tempo, então seja paciente. Prepare um cantinho tranquilo
-                        para que ele se sinta seguro. Apresente o novo ambiente aos poucos, principalmente se já houver
-                        outros
-                        animais na casa. Dê tempo para que ele se acostume com novos sons, cheiros e pessoas. Recompense
-                        comportamentos tranquilos com carinho e petiscos.</p>
+                    <p>A adaptação do seu novo pet pode levar tempo, então seja paciente. 
+                    Prepare um cantinho tranquilo para que ele se sinta seguro. 
+                    Apresente o novo ambiente aos poucos, principalmente se já houver outros animais na casa. 
+                    Dê tempo para que ele se acostume com novos sons, cheiros e pessoas. Recompense comportamentos tranquilos com carinho e petiscos.</p>
                 </div>
-            </div>
-            <div class="cards">
-                <div id="vacinas">
+                
+                <div id="vacinas-card" class="card-informacao">
+                    <img src="./HTML CSS JS/vacina.png" alt="vacina">
                     <h2>Vacinas</h2>
-                    <p>A vacinação é essencial para garantir a saúde do seu pet e prevenir doenças graves. Para cães, as
-                        vacinas mais comuns são a antirrábica, V8 ou V10, enquanto gatos devem ser vacinados com a V4 e
-                        antirrábica.
-                        Consulte seu veterinário para criar um calendário de vacinas adequado, que deve ser seguido à
-                        risca, especialmente nos primeiros meses de vida do animal.</p>
+                    <p>A vacinação é essencial para garantir a saúde do seu pet e prevenir doenças graves. 
+                    Para cães, as vacinas mais comuns são a antirrábica, V8 ou V10, enquanto gatos devem ser vacinados com a V4 e antirrábica. 
+                    Consulte seu veterinário para criar um calendário de vacinas adequado, que deve ser seguido à risca, 
+                    especialmente nos primeiros meses de vida do animal.</p>
                 </div>
             </div>
         </div>
