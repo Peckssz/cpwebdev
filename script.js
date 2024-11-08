@@ -1,66 +1,59 @@
-function enviarContatos() {
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const telefone = document.getElementById('telefone').value;
-    const assunto = document.getElementById('assunto').value;
-    const mensagem = document.getElementById('mensagem').value;
-
-    if (!nome || !email || !telefone || !assunto || !mensagem) {
-        alert('Preencha todos os campos!');
-    } else if (nome.length < 2){
-        alert('O nome deve conter no mínimo 2 caracteres!')
-    }
-
-    else{
-    alert(`Formulário enviado com sucesso!
-        Nome: ${nome}
-        Email: ${email}
-        Telefone: ${telefone}
-        Assunto: ${assunto}
-        Mensagem: ${mensagem}
-        `);
-    }
-}
-// botão dicas para novos adotantes (novos-adotantes) com click que mostra e esconde o conteúdo //
-
-const botaoDicas = document.getElementById('botao-dicas');
-const dicasCards = document.getElementById('dicas-cards');
-
-botaoDicas.addEventListener('click', function() {
-    if (dicasCards.classList.contains('active')) { // vê se o card está ativo //
-        dicasCards.classList.remove('active'); // esconde o card caso ativo //
-        dicasCards.style.maxHeight = null; // remove altura máxima //
-    } else {
-        dicasCards.classList.add('active');
-        dicasCards.style.maxHeight = dicasCards.scrollHeight + "px";
-    }
-});
-
-
-// footer preso na parte debaixo da tela (propriedade sticky não funcionava) //
-window.addEventListener('resize', function() {
-    adjustFooter();
-});
-
-function adjustFooter() {
-    const footer = document.getElementById('footer');
-    const content = document.querySelector('.content');
-    const footerHeight = footer.offsetHeight;
-
-    content.style.minHeight = `calc(600px - ${footerHeight}px)`; // altura fixa de 600px - altura do footer //
+function toggleDropdown() {
+    document.getElementById("dicas-dropdown").classList.toggle("mostrar");
 }
 
-adjustFooter();
-
-function mostrarAnimalInfo(nome, idade, porte, sexo, vermifugacao, vacinacao, castracao) {
-    alert(`Nome: ${nome}\nIdade: ${idade} meses\nPorte: ${porte}\nSexo: ${sexo}\nVermifugado: ${vermifugacao}\nVacinado: ${vacinacao}\nCastrado: ${castracao}`);
+window.onclick = function(event) {
+    if (!event.target.matches('.botao-drop-adotei')) {
+        var dropdowns = document.getElementsByClassName("conteudo-drop-adotei");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('mostrar')) {
+                openDropdown.classList.remove('mostrar');
+            }
+        }
+    }
 }
+
 document.addEventListener('DOMContentLoaded', function() {
-    const donationLink = document.querySelector('a[href*="instagram"]');
+    document.querySelectorAll('.conteudo-drop-adotei a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            document.querySelectorAll('.card-informacao').forEach(card => {
+                card.classList.remove('active');
+            });
+            
+            // Abre o card correspondente
+            const targetSection = this.getAttribute('data-section');
+            const targetCard = document.getElementById(`${targetSection}-card`);
+            if (targetCard) {
+                targetCard.classList.add('active');
+            }
+            
+            // Fecha o dropdown
+            document.getElementById("dicas-dropdown").classList.remove("mostrar");
+        });
+    });
 
-    donationLink.addEventListener('click', function(event) {
-        event.preventDefault();
-        alert('Você será redirecionado para o Instagram do Projeto Pacotinho de Amor.');
-        window.open(this.href, '_blank');
+    // Adicionar event listeners para os botões de fechar
+    document.querySelectorAll('.close-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            this.parentElement.classList.remove('active');
+        });
     });
 });
+
+// Ajustar o footer e o espaço para o conteúdo
+function adjustLayout() {
+    const footer = document.querySelector('footer');
+    const content = document.querySelector('.container');
+    const cardContainer = document.querySelector('.card-container');
+    
+    if (footer && content && cardContainer) {
+        const footerHeight = footer.offsetHeight;
+        cardContainer.style.marginBottom = `${footerHeight + 30}px`;
+    }
+}
+
+window.addEventListener('load', adjustLayout);
+window.addEventListener('resize', adjustLayout);
