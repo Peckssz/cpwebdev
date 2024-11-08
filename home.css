@@ -5,7 +5,10 @@
     padding: 0;
     font-family: sans-serif;
 }
-
+body {
+    max-width: 100%;
+    overflow-x: hidden; 
+}
 .banner {
     width: 100%;
     height: 100vh;
@@ -23,13 +26,13 @@
     justify-content: space-between;
 }
 .logo{
-    width:80px;
+    width: 5vw;
     cursor:pointer;
 }
 .navbar ul li{
     list-style: none;
     display: inline-block;
-    margin: 0px 20px;
+    margin: 0px 2vw;
     position: relative;
 }
 .navbar ul li a{
@@ -39,17 +42,18 @@
     cursor: pointer;
 }
 .navbar ul li::after{
-    content:"";
+    content: "";
     height: 3px;
     width: 0;
     background: #FCF684;
     position:absolute;
     left: 0px;
-    bottom: -10px;
-    transition: 0.5s;
+    bottom: -0.2em;
+    transition: 0.2s;
 }
 .navbar ul li:hover::after{
-    width:100%;
+    text-decoration: underline;
+    width: 100%;
 }
 .content{
     width:100%;
@@ -161,7 +165,7 @@ main {
 
 .text h1{
     font-family: Irish Grover, sans-serif;
-    font-size: 60px;
+    font-size: 4rem;
 
 }
 .text p{
@@ -176,7 +180,7 @@ main {
     padding: 20px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
     margin: 20px auto; 
-    max-width: 800px; 
+    max-width: 90%; 
 
 }
 
@@ -276,17 +280,15 @@ footer {
     background-color: #B77CD7;
     color: white;
     padding: 30px 20px;
-    text-align: center;
 }
-
+ 
 .footer-content {
-    width: 1200px;
+    display: flex;
+    width: 100%;
     margin: 0 auto;
+    
 }
 
-.social-icons {
-    margin-bottom: 20px;
-}
 
 .icon {
     margin: 0px 10px;
@@ -299,17 +301,36 @@ footer {
 }
 
 
-.newsletter {
+.newsletter {   
     margin-bottom: 20px;
+    justify-content: right;
+    display: block;
+    padding-left: 50vw;
+   
+
 }
+.quick-links{
+    display: flex;
+}
+
+.quick-links ul li{
+    list-style: none;
+}
+.quick-links ul li a{
+    color:#fff;
+    text-decoration:underline;
+    cursor: pointer;
+    
+}
+
 
 .newsletter h3 {
     margin-bottom: 10px;
+    
 }
 
 .newsletter form {
-    display: flex;
-    justify-content: center;
+
     align-items: center;
 }
 
@@ -334,7 +355,14 @@ footer {
 .newsletter button:hover {
     background-color: #FFD700; 
 }
-
+.social-icons {
+    display: flex;
+    text-align: left;
+    
+}
+.copyright{
+    padding-right: 36.5vw;
+}
 p {
     margin-top: 20px;
     font-size: 14px;
@@ -349,3 +377,10 @@ p {
     text-transform: uppercase;
     cursor: pointer;
 }
+
+.copyright{
+    font-family: Irish Grover, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+    
+}
+
