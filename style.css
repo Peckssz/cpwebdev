@@ -513,7 +513,8 @@ footer {
     background-color: var(--color-lightpurple);
 }
 
-.dropdown {
+<<<<<<< heeymew-patch-1
+.dropdown-adotei {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -569,6 +570,9 @@ footer {
     transform: scaleY(1);
     display: block;
 }
+=======
+/* transição de slide para cima e para baixo quando clica no botão */
+>>>>>>> main
 
 #dicas-cards {
     max-height: 0;
