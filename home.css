@@ -345,7 +345,7 @@ footer {
 .newsletter button {
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: #FCF684; 
     color: #333;
     cursor: pointer;
